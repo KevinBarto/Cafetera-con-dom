@@ -16,7 +16,7 @@ let cafe4 = new Productos ("Negro", 100);
 
 
 
-const botonSi = document.querySelector(".btnSi");
+const botonSi = document.querySelector("#btnSi");
 botonSi.onclick = function(){
     document.querySelector("#selectorCafe").style.opacity = 1;
 }
@@ -24,22 +24,22 @@ botonSi.onclick = function(){
 
 // ESTO LO HICE YO SOLO
 
-// const btnCapu = document.querySelector(".btnCapu");
+// const btnCapu = document.querySelector("#btnCapu");
 // btnCapu.onclick = function(){
 //     carrito.push(cafe1)
 // }
 
-// const btnMocca = document.querySelector(".btnMocca");
+// const btnMocca = document.querySelector("#btnMocca");
 // btnMocca.onclick = function(){
 //     carrito.push(cafe2)
 // }
 
-// const btnLeche = document.querySelector(".btnLeche");
+// const btnLeche = document.querySelector("#btnLeche");
 // btnLeche.onclick = function(){
 //     carrito.push(cafe3)
 // }
 
-// const btnNigga = document.querySelector(".btnNigga");
+// const btnNigga = document.querySelector("#btnNigga");
 // btnNigga.onclick = function (){
 //     carrito.push(cafe4)
 // }
@@ -52,7 +52,7 @@ function agregar(cafe) {
 
 
 
-const finalizar = document.querySelector(".finalizar");
+const finalizar = document.querySelector("#finalizar");
 finalizar.onclick = function(){
         carrito.forEach((Productos)=>{
         let recibo =document.createElement("div");
@@ -66,3 +66,10 @@ finalizar.onclick = function(){
     
 })
 }
+
+
+// const botonNo = document.querySelector("#btnNo");
+// botonSi.onclick = function(){
+//     let negativo =document.createElement("div")
+//     negativo.innerHTML=`*ruido a mate*`
+// }
